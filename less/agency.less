@@ -173,6 +173,8 @@ header {
 	.container {
 		border: 3px solid green;
 		padding: 0;
+		margin: 0;
+		width: 100%;
 	}
 	.intro-text {
 		border: 2px solid yellow;
@@ -209,6 +211,21 @@ header {
 			min-width: 320px;
 			order: 2;
 			flex: 0 1 50%;
+		}
+	}
+}
+
+@media(min-width:768px) {
+	header {
+		.intro-text {
+			.left-side {
+				padding-top: 250px;
+				padding-bottom: 250px;
+			}
+			.right-side {
+				padding-top: 250px;
+				padding-bottom: 250px;
+			}
 		}
 	}
 }
