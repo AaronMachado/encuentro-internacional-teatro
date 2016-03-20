@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-	border: 1px solid red;
+	//border: 1px solid red;
 	background-image: url('../img/header-bg.jpg');
 	background-repeat: none;
 	background-attachment: scroll;
@@ -171,19 +171,22 @@ header {
 	text-align: center;
 	color: white;
 	.container {
-		border: 3px solid green;
+		//border: 3px solid green;
 		padding: 0;
 		margin: 0;
 		width: 100%;
 	}
 	.intro-text {
-		border: 2px solid yellow;
+		//border: 2px solid yellow;
 		padding-top: 0px;
 		padding-bottom: 0px;
 		
 		display:flex;
 		flex-flow: row wrap;
 		justify-content: center;
+		.header-crown {
+			display: none;
+		}
 		.left-side {
 			.heading-font;
 			font-weight: 700; 
@@ -191,7 +194,8 @@ header {
 			font-size: 30px; 
 
 			padding: 50px 30px 50px 30px;
-			border: 3px solid red;
+			border: 3px solid #850207;//red
+			background: #850207;
 			
 			//Flexbox
 			min-width: 320px;
@@ -205,7 +209,8 @@ header {
 			font-size: 30px; 
 
 			padding: 50px 30px 50px 30px;
-			border: 3px solid blue;
+			border: 3px solid #003a79;//blue
+			background: #003a79;
 			
 			//Flexbox
 			min-width: 320px;
@@ -218,6 +223,16 @@ header {
 @media(min-width:768px) {
 	header {
 		.intro-text {
+			.header-crown {
+				display: initial;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 450px;
+				height: 450px;
+				margin-top: -225px; /* Half the height */
+				margin-left: -225px; /* Half the width */
+			}
 			.left-side {
 				padding-top: 250px;
 				padding-bottom: 250px;
