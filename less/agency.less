@@ -162,6 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+	border: 1px solid red;
 	background-image: url('../img/header-bg.jpg');
 	background-repeat: none;
 	background-attachment: scroll;
@@ -169,27 +170,50 @@ header {
 	.background-cover;
 	text-align: center;
 	color: white;
+	.container {
+		border: 3px solid green;
+		padding: 0;
+	}
 	.intro-text {
-		padding-top: 100px;
-		padding-bottom: 50px;
-		.intro-lead-in {
-			.serif-font;
-			font-style: italic;
-			font-size: 22px;
-			line-height: 22px;
-			margin-bottom: 25px;
-		}
-		.intro-heading {
+		border: 2px solid yellow;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		
+		display:flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		.left-side {
 			.heading-font;
-			font-weight: 700;
-			font-size: 50px;
-			line-height: 50px;
-			margin-bottom: 25px;
+			font-weight: 700; 
+			color:orange;
+			font-size: 30px; 
+
+			padding: 50px 30px 50px 30px;
+			border: 3px solid red;
+			
+			//Flexbox
+			min-width: 320px;
+			order: 1;
+			flex: 0 1 50%;
+		}
+		.right-side {
+			.heading-font;
+			font-weight: 700; 
+			color:orange;
+			font-size: 30px; 
+
+			padding: 50px 30px 50px 30px;
+			border: 3px solid blue;
+			
+			//Flexbox
+			min-width: 320px;
+			order: 2;
+			flex: 0 1 50%;
 		}
 	}
 }
 
-@media(min-width:768px) {
+/*@media(min-width:768px) {
 	header {
 		.intro-text {
 			padding-top: 300px;
@@ -210,7 +234,7 @@ header {
 			}
 		}
 	}
-}
+}*/
 
 // Global Section Styles
 
