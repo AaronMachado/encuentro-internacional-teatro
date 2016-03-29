@@ -288,11 +288,11 @@ header {
 			}
 			.left-side {
 				padding-top: 250px;
-				padding-bottom: 250px;
+				padding-bottom: 350px;
 			}
 			.right-side {
 				padding-top: 250px;
-				padding-bottom: 250px;
+				padding-bottom: 350px;
 			}
 		}
 	}
@@ -359,7 +359,7 @@ section {
 	.intro-text {
 		.intro-heading {
 			.heading-font;
-			color: #faf4cb; //New White
+			//color: #faf4cb; //New White
 			font-weight: 700;
 			font-size: 35px;
 			line-height: 35px;
@@ -396,7 +396,7 @@ section {
 .organizadores {
 	//border: 1px solid red;
 
-	background:  #faf4cb;
+	//background:  #faf4cb;
 	padding: 60px 0 50px 0;
 	
 	.section-heading {
@@ -487,26 +487,66 @@ section {
 
 .talleristas {
 	//border: 3px solid red;
-
-	background-image: url('../img/maquina.jpeg');
+	background: white;
+	background-image: url('../img/f.jpg');
 	background-repeat: none;
 	background-attachment: scroll;
 	background-position: center center;
 	.background-cover;
 	text-align: center;
 
+	color: white;
 	.circle {
 		//border: 1px solid red;
 		border-radius: 100%;
+		width: 300px;
+		padding: 0;
 	}
 
-	.portfolio-hover { 
-		border-radius: 100%;
+    .talleristas-link {
+    	//border: 5px solid green;
+	    display: block;
+	    position: relative;
+	    margin: 0 auto;
+	    max-width: 300px;
+     }
+
+	.tallerista-hover { 
+		background: fade(@brand-primary, 90%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all ease 0.5s;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        border-radius: 100%;
+        &:hover {
+            opacity: 1;
+        }
+        .talleristas-hover-content {
+            position: absolute;
+            width: 100%;
+            height: 20px;
+            font-size: 20px;
+            text-align: center;
+            top: 50%;
+            margin-top: -12px;
+            color: white;
+            i {
+                margin-top: -12px;
+            }
+            h3,
+            h4 {
+                margin: 0;
+            }
+        }
 	}
 
 	.talleristas-caption {
 		//width: 200px;
-		border: 2px solid green;
+		//border: 2px solid green;
+
 		max-width: 300px;
 		margin: 0 auto;
 		text-align: center;
@@ -517,6 +557,7 @@ section {
 		}
 		p {
 			.serif-font;
+			color: white;
 			font-style: italic;
 			font-size: 16px;
 			margin: 0;
