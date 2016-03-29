@@ -393,26 +393,34 @@ section {
 
 // Organizadores Section
 
-#organizadores {
+.organizadores {
 	//border: 1px solid red;
-	background: gray;
+
+	background:  #faf4cb;
+	padding: 60px 0 50px 0;
+	
+	.section-heading {
+		margin-bottom:55px;
+		font-size: 30px;
+	}
+
 	@media(min-width:768px) {
 		padding: 110px 0 80px 0;
-	}
-	.section-heading {
-		//border: 1px solid blue;
-		//margin-top: 0px;
-		margin-bottom:80px;
-		font-size: 35px;
+		.section-heading {
+			margin-bottom:80px;
+			font-size: 35px;
+		}
 	}
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
+
         .portfolio-link {
             display: block;
             position: relative;
             max-width: 400px;
             margin: 0 auto;
+            
             .portfolio-hover {
                 background: fade(@brand-primary, 90%);
                 position: absolute;
@@ -473,6 +481,47 @@ section {
             margin: 0 0 30px;
         }
     }
+}
+
+//Talleristas Section
+
+.talleristas {
+	//border: 3px solid red;
+
+	background-image: url('../img/maquina.jpeg');
+	background-repeat: none;
+	background-attachment: scroll;
+	background-position: center center;
+	.background-cover;
+	text-align: center;
+
+	.circle {
+		//border: 1px solid red;
+		border-radius: 100%;
+	}
+
+	.portfolio-hover { 
+		border-radius: 100%;
+	}
+
+	.talleristas-caption {
+		//width: 200px;
+		border: 2px solid green;
+		max-width: 300px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 10px;
+		h4 {
+			text-transform: none;
+			margin: 0;
+		}
+		p {
+			.serif-font;
+			font-style: italic;
+			font-size: 16px;
+			margin: 0;
+		}
+	}
 }
 
 // Timeline
