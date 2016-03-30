@@ -879,6 +879,8 @@ ul.social-buttons {
 	outline: none;
 }
 
+// Modal Views 
+
 .portfolio-modal {
 	.modal-content {
 	    border-radius: 0;
@@ -889,6 +891,10 @@ ul.social-buttons {
 	    min-height: 100%;
 	    padding: 100px 0;
 	    text-align: center;
+		@media(min-width:768px){
+			padding-top: 10px;
+			padding-bottom: 0;
+		}
 		h2 {
 	    	margin-bottom: 15px;
 	    	font-size: 3em;
@@ -908,6 +914,9 @@ ul.social-buttons {
 		}
 		img {
 			margin-bottom: 30px;
+		}
+		.img-tallerista {
+			max-width: 250px;
 		}
 	}
     .close-modal {
