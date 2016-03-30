@@ -180,9 +180,9 @@ h1, h2, h3, h4, h5, h6 {
 
 //Ad Hoc shit
 @media(max-width:767px) {
-	.brand-logo {
+	#brand-logo {
 		//border: 1px solid red;
-		visibility: hidden;
+		display: none;
 	}
 }
 
@@ -242,31 +242,27 @@ header {
 		}
 		.left-side {
 			.heading-font;
-			font-weight: 700; 
+			padding: 150px 10px 100px 10px;
+			
 			color: #f8b416;//orange
-			font-size: 30px; 
-
-			padding: 50px 30px 50px 30px;
 			border: 3px solid #850207;//red
 			background: #850207;
 			
 			//Flexbox
-			min-width: 320px;
+			//min-width: 320px;
 			order: 1;
 			flex: 0 1 50%;
 		}
 		.right-side {
 			.heading-font;
-			font-weight: 700; 
+			padding: 150px 10px 100px 10px;
+			
 			color: #f8b416;//orange
-			font-size: 30px; 
-
-			padding: 50px 30px 50px 30px;
 			border: 3px solid #003a79;//blue
 			background: #003a79;
 			
 			//Flexbox
-			min-width: 320px;
+			//min-width: 320px;
 			order: 2;
 			flex: 0 1 50%;
 		}
@@ -287,10 +283,16 @@ header {
 				margin-left: -225px; /* Half the width */
 			}
 			.left-side {
+				font-weight: 700; 
+				font-size: 30px; 
+				
 				padding-top: 250px;
 				padding-bottom: 350px;
 			}
 			.right-side {
+				font-weight: 700; 
+				font-size: 30px;
+
 				padding-top: 250px;
 				padding-bottom: 350px;
 			}
