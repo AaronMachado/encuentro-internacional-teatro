@@ -227,6 +227,19 @@ header {
 		width: 100%;
 	}
 	.intro-text {
+
+		.header-crown-small {
+			display: initial;
+			position: absolute;
+			top: 160px;
+			left: 50%;
+			width: 100px;
+			height: 100px;
+			margin-top: -50px; /* Half the height */
+			margin-left: -50px; /* Half the width */
+		}
+
+
 		//border: 2px solid yellow;
 		padding-top: 0px;
 		padding-bottom: 0px;
@@ -242,7 +255,7 @@ header {
 		}
 		.left-side {
 			.heading-font;
-			padding: 150px 10px 100px 10px;
+			padding: 150px 40px 100px 5px;
 			
 			color: #f8b416;//orange
 			border: 3px solid #850207;//red
@@ -255,8 +268,10 @@ header {
 		}
 		.right-side {
 			.heading-font;
-			padding: 150px 10px 100px 10px;
+			padding: 150px 5px 100px 40px;
 			
+			letter-spacing: 0.1em;
+
 			color: #f8b416;//orange
 			border: 3px solid #003a79;//blue
 			background: #003a79;
