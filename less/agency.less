@@ -885,11 +885,20 @@ aside.clients {
 
 section#contact {
 	background-color: @gray-darkest;
-	background-image: url('../img/map-image.png');
-	background-position: center;
-	background-repeat: no-repeat;
+	background-image: url('../img/door.jpg');
+
+	background-repeat: none;
+	background-attachment: scroll;
+	background-position: center center;
+	.background-cover;
 	.section-heading {
 		color: white;
+		margin-bottom: 80px;
+	}
+	h3 {
+		color:white;
+		//border: 1px solid red;
+		margin-bottom: 0px;
 	}
 	.form-group {
 		margin-bottom: 25px;
@@ -936,12 +945,14 @@ section#contact {
 // Footer
 
 footer {
+	background-color: #333;
 	padding: 25px 0;
 	text-align: center;
 	span.copyright {
 		line-height: 40px;
 		.heading-font;
 		text-transform: none;
+		color: @brand-primary;
 	}
 	ul.quicklinks {
 		margin-bottom: 0;
