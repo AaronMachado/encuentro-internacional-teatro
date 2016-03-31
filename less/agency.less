@@ -244,13 +244,20 @@ header {
 	text-align: center;
 	color: white;
 	.container {
-		//border: 3px solid green;
 		padding: 0;
 		margin: 0;
 		width: 100%;
 	}
 	.intro-text {
-
+		padding-top: 0px;
+		padding-bottom: 0px;
+		//Flexbox
+		display:flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		a {
+			text-decoration: none;
+		}
 		.header-crown-small {
 			display: initial;
 			position: absolute;
@@ -260,25 +267,9 @@ header {
 			height: 100px;
 			margin-top: -50px; /* Half the height */
 			margin-left: -50px; /* Half the width */
-			@media(min-width:768px) {
-				border: 1px solid red;
-				visibility: hidden; //correct this
-			}
 		}
-
-
-		//border: 2px solid yellow;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		
-		display:flex;
-		flex-flow: row wrap;
-		justify-content: center;
 		.header-crown {
 			display: none;
-		}
-		a {
-			text-decoration: none;
 		}
 		.left-side {
 			.heading-font;
@@ -286,11 +277,9 @@ header {
 			height: 100vh;
 
 			color: #f8b416;//orange
-			border: 3px solid #850207;//red
 			background: #850207;
 			
 			//Flexbox
-			//min-width: 320px;
 			order: 1;
 			flex: 0 1 50%;
 		}
@@ -302,11 +291,9 @@ header {
 			letter-spacing: 0.1em;
 
 			color: #f8b416;//orange
-			border: 3px solid #003a79;//blue
 			background: #003a79;
 			
 			//Flexbox
-			//min-width: 320px;
 			order: 2;
 			flex: 0 1 50%;
 		}
@@ -351,6 +338,9 @@ header {
 				margin-top: -225px; /* Half the height */
 				margin-left: -225px; /* Half the width */
 			}
+			.header-crown-small {
+				display: none;
+			}
 			.left-side {
 				font-weight: 700; 
 				font-size: 18px;
@@ -358,9 +348,6 @@ header {
 				
 				padding-top: 330px;
 				padding-bottom: 280px;
-
-				//Ad Hoc Aaron
-				//max-height: 100vw;
 			}
 			.right-side {
 				font-weight: 700; 
@@ -369,9 +356,6 @@ header {
 
 				padding-top: 330px;
 				padding-bottom: 280px;
-
-				//Ad Hoc Aaron
-				//max-height: 100vw;
 			}
 		}
 	}
@@ -393,31 +377,18 @@ header {
 			.left-side {
 				font-weight: 700; 
 				font-size: 30px; 
-				
-				/*//padding-top: 250px;
-				//padding-bottom: 350px;
-
-				padding-top: 320px;
-				padding-bottom: 280px;*/
 			}
 			.right-side {
 				font-weight: 700; 
 				font-size: 30px;
-
-				/*//padding-top: 250px;
-				//padding-bottom: 350px;
-
-				padding-top: 320px;
-				padding-bottom: 280px;*/
 			}
 		}
 	}
 }
 
+//Header Brand logo for mobile view only
+
 .header-brand-logo {
-	//border: 1px solid red;
-	//padding-top: 60px;
-	//padding-bottom: 10px;
 	display: initial;
 	position: absolute;
 	top: 155px;
@@ -427,9 +398,8 @@ header {
 	margin-top: -50px; /* Half the height */
 	margin-left: -125px; /* Half the width */
 }
-@media(min-width:768px){
+@media(min-width:768px) {
 	.header-brand-logo {
-		//border: 1px solid red;
 		display: none;
 	}
 }
