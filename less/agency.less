@@ -235,11 +235,12 @@ h1, h2, h3, h4, h5, h6 {
 // Header 
 header {
 	//border: 1px solid red;
-	background-image: url('../img/header-bg.jpg');
+	/*background-image: url('../img/header-bg.jpg');
 	background-repeat: none;
 	background-attachment: scroll;
 	background-position: center center;
-	.background-cover;
+	.background-cover;*/
+	background-color: #333;
 	text-align: center;
 	color: white;
 	.container {
@@ -253,7 +254,7 @@ header {
 		.header-crown-small {
 			display: initial;
 			position: absolute;
-			top: 160px;
+			top: 240px;
 			left: 50%;
 			width: 100px;
 			height: 100px;
@@ -281,7 +282,7 @@ header {
 		}
 		.left-side {
 			.heading-font;
-			padding: 150px 40px 100px 5px;
+			padding: 230px 40px 50px 5px;
 			
 			color: #f8b416;//orange
 			border: 3px solid #850207;//red
@@ -294,7 +295,7 @@ header {
 		}
 		.right-side {
 			.heading-font;
-			padding: 150px 5px 100px 40px;
+			padding: 230px 5px 50px 40px;
 			
 			letter-spacing: 0.1em;
 
@@ -400,6 +401,26 @@ header {
 				padding-bottom: 280px;*/
 			}
 		}
+	}
+}
+
+.header-brand-logo {
+	//border: 1px solid red;
+	//padding-top: 60px;
+	//padding-bottom: 10px;
+	display: initial;
+	position: absolute;
+	top: 115px;
+	left: 50%;
+	width: 249px;
+	height: 100px;
+	margin-top: -50px; /* Half the height */
+	margin-left: -125px; /* Half the width */
+}
+@media(min-width:768px){
+	.header-brand-logo {
+		//border: 1px solid red;
+		display: none;
 	}
 }
 
