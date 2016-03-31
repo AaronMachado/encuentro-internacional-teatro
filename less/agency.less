@@ -142,6 +142,12 @@ h1, h2, h3, h4, h5, h6 {
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
         border: none;
+        a {
+        	//border: 1px solid red;
+        	font-size: 9px;
+        	padding-right: 0px;
+        	padding-left: 0px;
+        }
 	    .navbar-brand {
 	        font-size: 2em;
 	        -webkit-transition: all 0.3s;
@@ -159,6 +165,22 @@ h1, h2, h3, h4, h5, h6 {
 	        font-size: 1.5em;
 	    }
 	}
+}
+
+@media(min-width:992px) {
+    .navbar-default {
+        a {
+        	font-size: 13px;
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    .navbar-default {
+        a {
+        	font-size: 14px;
+        }
+    }
 }
 
 //Custom Brand logo link for the Navigation Bar
