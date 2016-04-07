@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .img-centered {
-	margin: 0 auto;
+	margin-top: 0px;
 }
 
 .bg-light-gray {
@@ -877,12 +877,39 @@ section {
 }
 
 // Clients Aside
-
-aside.clients {
+.ad-hoc {
+	//border: 1px solid red;
+	padding-top: 0px;
+	//padding-right: 50px;
 	img {
-		margin: 50px auto;
+		filter: grayscale(100%);
+		&:hover {
+			filter: grayscale(0%);
+		}
 	}
 }
+aside.clients {
+	img {
+		margin: 0px auto;
+		width: 100%;
+		//filter: grayscale(100%);
+	}
+}
+
+aside {
+	//border: 1px solid red;
+	padding-bottom: 40px;
+}
+
+/*@media(max-width:768px){
+	aside.clients {
+		img {
+			max-width: 260px;
+			display: center;
+		}
+	}
+
+}*/
 
 // Contact Section
 
@@ -898,10 +925,10 @@ section#contact {
 		color: white;
 		margin-bottom: 80px;
 	}
-	h3 {
+	h3, a {
 		color:white;
-		//border: 1px solid red;
 		margin-bottom: 0px;
+		text-decoration: none;
 	}
 	.form-group {
 		margin-bottom: 25px;
